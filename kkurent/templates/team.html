@@ -1,0 +1,285 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    html{
+    background: rgb(249, 248, 248);
+    margin-top: 130px;
+
+     
+}
+
+
+html {
+    background: transparent;
+}
+.container{
+margin-top:70px;
+    background: rgb(255, 255, 255);
+ 
+}
+ 
+.our-team{
+    padding: 20px 15px 30px;
+    background:#FFFBE9;
+    border-radius: 15px;
+    text-align: center;
+   border:1px solid #557153;
+ 
+}
+
+.our-team:hover{
+transition: .5s;
+  box-shadow: 0px 1px 5px 0px #FFFBE9;
+}
+.our-team .pic{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    margin-bottom: 25px;
+    transition: all 0.5s ease 0s;
+   border-radius: 50%;
+}
+.our-team:hover .pic{
+    background: #285430;
+    border-radius: 50%;
+}
+.pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.our-team .title{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #285430;
+    text-transform: uppercase;
+    margin: 0 0 7px 0;
+}
+.our-team .post{
+    display: block;
+    font-size: 15px;
+    color: #285430;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.our-team .social{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.our-team .social li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.our-team .social li a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 15px;
+    color: #285430;
+    border: 1px solid #285430;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .social li a{
+    background: #285430;
+    color: #fff;
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+}
+
+
+
+
+
+header {
+    background-color:#FFFFFF;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7px 20px ;
+}
+
+.navbar{
+    background-color:#FFFFFF !important;
+    width: 100% !important;
+    padding: 18px 200px !important;
+}
+
+.offcanvas{
+    background-color:#FFFFFF !important;}
+
+
+    .navigation a{
+        color:#285430;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: 500;
+        padding-left: 30px;
+    }
+    
+    .navigation a:hover{
+        color: #A4BE7B;
+    }
+    
+    section {
+        padding: 50px 200px;
+    }
+
+    
+
+
+/* ------ nav css ------- */
+
+
+body {
+    min-height: 100vh; box-sizing: border-box; background: #eae9e9;
+    font-family: "Open Sans" display: grid;
+    place-items: center background-color:#222
+    }
+    
+    .navigation a {
+    text-decoration: none;
+    width: 40px;
+    height: 20px;
+    padding: 1rem 2.5rem; position: relative;
+    background-color: hsl(0, 20%, 95%); border-radius: 5px; transition: all 1.3s:
+    overflow: hidden;
+    }
+    .navigation a::before {
+    content:
+    position:absolute;
+    background-color: #222;
+    inset: 3px; z-index: 2;
+    border-radius: 5px;
+    }
+    .navigation a::after {
+    content:” ”;
+    position: absolute;
+    background-color: #eae9e9;
+     width: 10px;
+    height: 200%:
+    top: -50%; 
+    left:50%;
+    transform: translate(-50%);
+    z-index: 1;
+    animation: rotate 01s linear infinite;
+    }
+    @keyframes rotate {
+    0% {rotate: deg;}
+    100% {rotate: 360deg;}
+    }
+    .navigation a span {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     color: #457f5d; 
+     font-size: 0.8rem; 
+    font-weight: 500;
+    z-index: 99;
+    transition: all 0.35;
+    }
+    .navigation a:hover {
+    color: #285430; 
+    }
+    .navigation a:hover:after {animation: none;}
+    
+    
+</style>
+
+<body style="background:#ffff;">
+    <br>
+     <center><h1 style="color: #3C6255; font-family:'Cairo';font-size: 50px;">المطورين</h1></center>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="static/images/jo.png">
+                    </div>
+                    <h3 class="title">وجدان</h3>
+                    <span class="post">Full Stack</span>
+                    <ul class="social">
+                        <li>
+                          <a href="https://twitter.com/wejdanls"class="fa-brands fa-twitter"></a>  
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.linkedin.com/in/wejdan-al-1067b1257"class="fa-brands fa-linkedin"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="static/Images/shahadphoto.png">
+                    </div>
+                    <h3 class="title">شهد</h3>
+                    <span class="post">Web developer</span>
+                    <ul class="social">
+                        <li><a href="https://twitter.com/Shahad22Al_"class="fa-brands fa-twitter"></a></li>
+                        <li><a href="https://www.linkedin.com/in/shahad-mujib-1b7690257/" class="fa-brands fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="static/images/dina.png">
+                    </div>
+                    <h3 class="title">دينا</h3>
+                    <span class="post">web developer</span>
+                    <ul class="social">
+                        <li><a href="#" class="fa-brands fa-twitter"></a></li>
+                        <li><a href="https://www.linkedin.com/in/dina-ali-418469255/" class="fa-brands fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="static/images/ro.png">
+                    </div>
+                    <h3 class="title">ربى</h3>
+                    <span class="post">Graphic Designer</span>
+                    <ul class="social">
+                        <li><a href="#" class="fa-brands fa-twitter"></a></li>
+                        <li><a href="https://www.linkedin.com/in/ruba-asiri-436145261
+                            " class="fa-brands fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    
+    <footer class="footer">
+       
+        <center>
+          <div>
+            <img src="static/Images/login_logo.png">
+        </div>
+        </center>
+      
+        
+    </footer>
+    
+</body>
+{% endblock content %}
+</html>
